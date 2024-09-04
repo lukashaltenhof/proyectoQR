@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  password: string = '';
+  showPassword: boolean = false;
+  email: string = '';
 
-  constructor() {}
+  constructor(private navCtrl: NavController) {}
 
+  togglePassword() {
+    this.showPassword = !this.showPassword;
+  }
+
+  login() {
+    if (this.email) {
+      this.navCtrl.navigateForward('/pagina1', {
+        queryParams: { email: this.email }
+      });
+    } else {
+      console.log('Email is empty');
+    }
+  }
 }
