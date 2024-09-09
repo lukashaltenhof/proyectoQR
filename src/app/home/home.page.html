@@ -1,21 +1,20 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" >
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">RegistrAPP</ion-title>
-    </ion-toolbar>
+    
   </ion-header>
   
-  <ion-card>
-    <img alt="logo_duoc" src="assets/img/logo-duoc.png" />
+  <ion-card style="background: none; text-align: center;">
+    <img alt="logo_duoc" src="assets/img/logo-duoc.png"  />
     <ion-card-header>
-      <ion-card-title style="text-align: center;">Docentes</ion-card-title>
+      <ion-card-title style="color: #beae19; font-size: 30px;">Docentes</ion-card-title>
     </ion-card-header>
+    
   </ion-card>
 
   <ion-grid>
     <ion-row>
       <ion-col size="12" size-md="6" size-lg="4">
-        <ion-item class="center-item">
+        <ion-item class="custom-card">
           <ion-input
             [(ngModel)]="email"
             label="Usuario"
@@ -29,7 +28,7 @@
     </ion-row>
     <ion-row>
       <ion-col size="12" size-md="6" size-lg="4">
-        <ion-item class="center-item">
+        <ion-item class="custom-card">
           <ion-input
             [(ngModel)]="password"
             [type]="showPassword ? 'text' : 'password'"
@@ -45,10 +44,14 @@
         </ion-item>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <ion-row >
       <ion-col size="12" size-md="6" size-lg="4">
-        <ion-button expand="full" (click)="login()">Iniciar Sesión</ion-button>
+        <ion-button expand="full" (click)="login()" class="custom-login-button">Iniciar Sesión</ion-button>
       </ion-col>
     </ion-row>
+
+    <div class="loading-container" *ngIf="loading">
+      <img src="assets/img/icono_carga.png" class="loading-icon" />
+    </div>
   </ion-grid>
 </ion-content>

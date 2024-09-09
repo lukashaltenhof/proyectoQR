@@ -19,9 +19,6 @@ export class Pagina1Page implements OnInit {
   }
 
   logout() {
-    // Puedes agregar aquí la lógica para cerrar sesión si es necesario
-
-    // Redirigir a la página de inicio
     this.router.navigate(['/home']);
   }
 }

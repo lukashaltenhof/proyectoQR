@@ -1,12 +1,12 @@
 <ion-menu contentId="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu Content</ion-title>
+  <ion-header >
+    <ion-toolbar >
+      <ion-title >Opciones</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">
-    <ion-list>
-      <ion-item>
+  <ion-content class="ion-padding menu-content" >
+    <ion-list >
+      <ion-item >
         <ion-label>Registrar Nueva Clase</ion-label>
       </ion-item>
       <ion-item>
@@ -19,20 +19,32 @@
   </ion-content>
 </ion-menu>
 
-<div class="ion-page" id="main-content">
+<div class="ion-page" id="main-content" >
   <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
-      <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Bienvenido {{ email }}</ion-card-title>
-      </ion-card-header>
-    </ion-card>
+  
+  <ion-content class="ion-padding page-content">
+    <ion-row>
+      <ion-col size="12" size-md="8" size-lg="6">
+        <ion-card class="custom-card">  
+          <ion-card-content>
+            <!-- Mostrar la foto si el usuario es usuario1@profesor.duoc.cl -->
+            <div *ngIf="email === 'usuario1@profesor.duoc.cl'" class="user-photo-container">
+              <div class="user-photo-circle">
+                <ion-img src="assets/img/usuario1.png"></ion-img>
+              </div>
+            </div>
+          </ion-card-content>
+          <ion-card-header>
+            <ion-card-title class="card-title">Bienvenido(a), {{ email }}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
   </ion-content>
 </div>
