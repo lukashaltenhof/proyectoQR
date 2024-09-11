@@ -1,14 +1,12 @@
-<ion-content [fullscreen]="true" >
+<ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    
   </ion-header>
   
   <ion-card style="background: none; text-align: center;">
-    <img alt="logo_duoc" src="assets/img/logo-duoc.png"  />
+    <img alt="logo_duoc" src="assets/img/logo-duoc.png" />
     <ion-card-header>
       <ion-card-title style="color: #beae19; font-size: 30px;">Docentes</ion-card-title>
     </ion-card-header>
-    
   </ion-card>
 
   <ion-grid>
@@ -44,11 +42,14 @@
         </ion-item>
       </ion-col>
     </ion-row>
-    <ion-row >
+    <ion-row>
       <ion-col size="12" size-md="6" size-lg="4">
+        <ion-button expand="full" (click)="reestablecerPassword()" class="forgot-password-link">Reestablecer Contraseña</ion-button>
         <ion-button expand="full" (click)="login()" class="custom-login-button">Iniciar Sesión</ion-button>
       </ion-col>
     </ion-row>
+
+    
 
     <div class="loading-container" *ngIf="loading">
       <img src="assets/img/icono_carga.png" class="loading-icon" />

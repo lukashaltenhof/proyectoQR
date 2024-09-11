@@ -6,7 +6,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { NuevaclasePageRoutingModule } from './nuevaclase-routing.module';
 
-import { NuevaclasePage } from './nuevaclase.page';
+import { NuevaClasePage } from './nuevaclase.page';
+
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { NuevaclasePage } from './nuevaclase.page';
     IonicModule,
     NuevaclasePageRoutingModule
   ],
-  declarations: [NuevaclasePage]
+  declarations: [NuevaClasePage]
 })
 export class NuevaclasePageModule {}

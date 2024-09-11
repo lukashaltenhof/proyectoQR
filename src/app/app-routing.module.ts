@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'nuevaclase',
     loadChildren: () => import('./nuevaclase/nuevaclase.module').then( m => m.NuevaclasePageModule)
   },
+  {
+    path: 'reestablecer-password',
+    loadChildren: () => import('./reestablecer-password/reestablecer-password.module').then( m => m.ReestablecerPasswordPageModule)
+  },
 ];
 
 @NgModule({

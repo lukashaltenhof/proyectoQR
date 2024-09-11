@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, AnimationController } from '@ionic/angular';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,17 +11,24 @@ export class HomePage {
   password: string = '';
   showPassword: boolean = false;
   email: string = '';
-  loading: boolean = false; // Variable para controlar la visibilidad del ícono de carga
+  loading: boolean = false; 
 
   constructor(
     private navCtrl: NavController,
-    private animationCtrl: AnimationController
+    private animationCtrl: AnimationController,
+    private route: ActivatedRoute, private router: Router
   ) {}
 
   togglePassword() {
     this.showPassword = !this.showPassword;
   }
 
+  reestablecerPassword() {
+    this.router.navigate(['/reestablecer-password']);
+
+
+
+  }
   login() {
     if (this.email) {
       // Mostrar el ícono de carga

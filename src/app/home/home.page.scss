@@ -44,11 +44,13 @@ ion-content {
 .custom-card {
   border-radius: 10px; /* Bordes redondeados opcionales */
   text-align: center; /* Alinea el texto al centro */
-  padding: 16px; /* Espaciado interno */
+  height: 60px;
+ 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.295); /* Opcional: sombra para destacar la tarjeta */
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 10px;
+  background-color: #ffffff;
 }
 
 .custom-login-button {
@@ -85,3 +87,11 @@ ion-content {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.forgot-password-link {
+  --background: #2e5999; /* Fondo amarillo */
+  --color: #ffffff; /* Texto negro */
+  
+}
+
+
