@@ -35,18 +35,16 @@ ion-content {
 
 .page-content {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center;     /* Centra verticalmente */
-  height: 100vh;           /* Asegura que el contenedor ocupe el 100% de la altura de la vista */
+  justify-content: center; 
+  height: 100vh;           
 }
 
-/* CSS para la tarjeta */
 .custom-card {
-  border-radius: 10px; /* Bordes redondeados opcionales */
-  text-align: center; /* Alinea el texto al centro */
+  border-radius: 10px; 
+  text-align: center; 
   height: 60px;
  
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.295); /* Opcional: sombra para destacar la tarjeta */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.295); 
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 10px;
@@ -54,12 +52,12 @@ ion-content {
 }
 
 .custom-login-button {
-  --background: #beae19; /* Fondo amarillo */
-  --color: #000000; /* Texto negro */
+  --background: #beae19;
+  --color: #000000; 
  
 }
 
-/* Estilos para el contenedor del ícono de carga */
+
 .loading-container {
   position: absolute;
   top: 50%;
@@ -70,28 +68,26 @@ ion-content {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0); /* Fondo semitransparente */
-  z-index: 10; /* Asegúrate de que el ícono de carga esté sobre otros elementos */
+  background: rgba(0, 0, 0, 0); 
+  z-index: 10;
 }
 
-/* Estilos para el ícono de carga con animación de giro */
+
 .loading-icon {
   margin-top: 300px;
-  width: 100px; /* Ajusta el tamaño según sea necesario */
+  width: 100px; 
   height: 100px;
-  animation: spin 3s linear infinite; /* Gira continuamente durante 3 segundos */
+  animation: spin 3s linear infinite; 
 }
 
-/* Definición de la animación de giro */
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 
 .forgot-password-link {
-  --background: #2e5999; /* Fondo amarillo */
-  --color: #ffffff; /* Texto negro */
+  --background: #2e5999; 
+  --color: #ffffff; 
   
 }
-
-

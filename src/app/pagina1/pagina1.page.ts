@@ -47,7 +47,7 @@ export class Pagina1Page implements OnInit {
 
       // Formato de la fecha
       const day = now.getDate().toString().padStart(2, '0');
-      const month = (now.getMonth() + 1).toString().padStart(2, '0'); // Los meses en JS empiezan desde 0
+      const month = (now.getMonth() + 1).toString().padStart(2, '0'); 
       const year = now.getFullYear();
 
       // Asignar la hora y la fecha al HTML

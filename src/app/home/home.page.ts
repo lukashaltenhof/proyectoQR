@@ -31,20 +31,20 @@ export class HomePage {
   }
   login() {
     if (this.email) {
-      // Mostrar el ícono de carga
+      
       this.loading = true;
 
-      // Temporizador para simular la animación de carga
+      
       setTimeout(() => {
-        // Navegar a la página después de 3 segundos
+        
         this.navCtrl.navigateForward('/pagina1', {
           queryParams: { email: this.email },
           animated: true
         });
 
-        // Ocultar el ícono de carga (en caso de que se necesite)
+        
         this.loading = false;
-      }, 2000); // 3 segundos
+      }, 2000); 
     } else {
       console.log('Email is empty');
     }

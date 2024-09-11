@@ -1,4 +1,4 @@
-/* CSS global para el contenedor centrado */
+
 #container {
   position: absolute;
   left: 0;
@@ -31,55 +31,55 @@
 }
 
 
-/* CSS para la página principal */
+
 .page-content {
   --background: url('/assets/img/pagina1_fondo.jpg') no-repeat center center / cover;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center;     /* Centra verticalmente */
-  height: 100vh;           /* Asegura que el contenedor ocupe el 100% de la altura de la vista */
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh;           
 }
 
-/* CSS para la tarjeta */
+
 .custom-card {
-  background: rgba(0, 0, 0, 0.7); /* Fondo negro con 70% de opacidad */
-  color: white; /* Color de texto blanco */
-  border-radius: 10px; /* Bordes redondeados opcionales */
-  text-align: center; /* Alinea el texto al centro */
-  padding: 16px; /* Espaciado interno */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra para destacar la tarjeta */
+  background: rgba(0, 0, 0, 0.7); 
+  color: white; 
+  border-radius: 10px; 
+  text-align: center;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* CSS para centrar la foto dentro del ion-card */
+
 .user-photo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 16px; /* Ajustar el margen según sea necesario */
+  margin-top: 16px; 
 }
 
 .user-photo-circle {
-  width: 100px; /* Ajusta el tamaño del círculo según sea necesario */
-  height: 100px; /* Ajusta el tamaño del círculo según sea necesario */
-  border-radius: 50%; /* Hace que el contenedor sea circular */
-  overflow: hidden; /* Oculta la parte de la imagen que sobresale del círculo */
+  width: 100px;
+  height: 100px; 
+  border-radius: 50%; 
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff; /* Fondo blanco para el contenedor del círculo */
+  background-color: #fff; 
 }
 
 .user-photo-circle ion-img {
-  width: 100%; /* La imagen ocupa el 100% del contenedor circular */
-  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-  object-fit: cover; /* Asegura que la imagen cubra el área del círculo */
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
 }
 
-/* Estilo para el título dentro de la tarjeta */
+
 .card-title {
-  color: #ffffff; /* Color del texto */
-  background-color: rgba(0, 0, 0, 0.562); /* Fondo semitransparente para el título */
-  padding: 8px; /* Espaciado interno para el título */
+  color: #ffffff; 
+  background-color: rgba(0, 0, 0, 0.562); 
+  padding: 8px; 
 }
 
 .clock-container {

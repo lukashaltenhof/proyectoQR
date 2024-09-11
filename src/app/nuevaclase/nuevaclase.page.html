@@ -1,4 +1,4 @@
-<!-- Menú Lateral -->
+
 <ion-menu contentId="main-content">
   <ion-header>
     <ion-toolbar>
@@ -23,7 +23,7 @@
   </ion-content>
 </ion-menu>
 
-<!-- Contenido Principal -->
+
 <ion-content id="main-content">
   <ion-header>
     <ion-toolbar>
@@ -35,24 +35,24 @@
   </ion-header>
 
   <ion-content [fullscreen]="true" class="ion-padding page-content">
-    <!-- Mostrar icono de carga mientras se está generando el QR -->
+   
     <div class="loading-container" *ngIf="loading">
       <img src="assets/img/icono_carga.png" class="loading-icon" />
     </div>
 
-    <!-- Mostrar QR cuando se haya generado y no esté cargando -->
+    
     <div *ngIf="showQrCode && !loading">
       <ion-img src="assets/img/qr.jpg"></ion-img>
-      <!-- Mostrar clase y sección seleccionadas -->
+      
       <div *ngIf="selectedClass && selectedSection">
         <p class="selected-info">Clase Seleccionada: {{ selectedClass }}</p>
         <p class="selected-info">Sección Seleccionada: {{ selectedSection }}</p>
       </div>
     </div>
 
-    <!-- Mostrar dropdowns y botón solo si no está cargando y no se ha generado el QR -->
+    
     <ng-container *ngIf="!showQrCode && !loading">
-      <!-- Dropdown para seleccionar la clase -->
+      
       <ion-item>
         <ion-label>Selecciona una Clase</ion-label>
         <ion-select [(ngModel)]="selectedClass" (ionChange)="onClassOrSectionSelected()">
@@ -60,7 +60,7 @@
         </ion-select>
       </ion-item>
 
-      <!-- Dropdown para seleccionar la sección -->
+     
       <ion-item>
         <ion-label>Selecciona una Sección</ion-label>
         <ion-select [(ngModel)]="selectedSection" (ionChange)="onClassOrSectionSelected()">
@@ -68,13 +68,13 @@
         </ion-select>
       </ion-item>
 
-      <!-- Botón para proyectar -->
+      
       <ion-item>
         <ion-label>Proyectar</ion-label>
         <ion-toggle [(ngModel)]="isProyectar" (ionChange)="onProyectarChange()"></ion-toggle>
       </ion-item>
 
-      <!-- Botón para generar QR, habilitado solo si clase y sección están seleccionadas -->
+      
       <ion-button expand="full" [disabled]="!isClassAndSectionSelected || loading" (click)="generarQr()" class="custom-login-button">
         Generar QR
       </ion-button>

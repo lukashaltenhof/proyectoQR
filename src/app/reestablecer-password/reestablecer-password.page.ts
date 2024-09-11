@@ -23,32 +23,32 @@ export class ReestablecerPasswordPage implements OnInit {
 
   sendVerificationEmail() {
     this.loading = true;
-    // Simular envío de correo
+    
     setTimeout(() => {
       this.loading = false;
       this.isCodeSent = true;
-    }, 2000); // Simula un retraso de 2 segundos
+    }, 2000); 
   }
 
   verifyCode() {
     this.loading = true;
-    // Simular verificación de código
+    
     setTimeout(() => {
       this.loading = false;
       this.isCodeVerified = true;
-    }, 2000); // Simula un retraso de 2 segundos
+    }, 2000); 
   }
 
   updatePassword() {
     if (this.newPassword === this.confirmPassword) {
       this.loading = true;
-      // Simular actualización de contraseña
+      
       setTimeout(() => {
         this.loading = false;
         this.successMessage = true;
-        this.playSuccessAnimation(); // Iniciar la animación cuando se actualice la contraseña con éxito
+        this.playSuccessAnimation(); 
         this.startCountdown();
-      }, 2000); // Simula un retraso de 2 segundos
+      }, 2000); 
     } else {
       console.log('Las contraseñas no coinciden');
     }
@@ -62,7 +62,7 @@ export class ReestablecerPasswordPage implements OnInit {
         clearInterval(this.countdownInterval);
         this.navCtrl.navigateRoot('/home');
       }
-    }, 1000); // Actualiza cada segundo
+    }, 1000); 
   }
 
   playSuccessAnimation() {
@@ -82,7 +82,7 @@ export class ReestablecerPasswordPage implements OnInit {
       } else {
         console.error('Elemento .success-message no encontrado');
       }
-    }, 100); // Espera unos milisegundos para asegurarte de que el DOM esté listo
+    }, 100); 
   }
   
 }
