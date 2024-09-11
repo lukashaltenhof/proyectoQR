@@ -30,10 +30,6 @@
   text-align: center;
 }
 
-menu-content {
-background-color: aqua;
-}
-
 
 /* CSS para la página principal */
 .page-content {
@@ -84,4 +80,20 @@ background-color: aqua;
   color: #ffffff; /* Color del texto */
   background-color: rgba(0, 0, 0, 0.562); /* Fondo semitransparente para el título */
   padding: 8px; /* Espaciado interno para el título */
+}
+
+.clock-container {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#time {
+  font-size: 48px;
+  color: #ffffff;
+}
+
+#date {
+  font-size: 24px;
+  color: #ffffff;
 }
