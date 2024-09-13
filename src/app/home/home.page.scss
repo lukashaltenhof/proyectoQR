@@ -91,3 +91,8 @@ ion-content {
   --color: #ffffff; 
   
 }
+
+.logo-container {
+  display: inline-block;
+  transition: transform 1s ease-in-out;
+}

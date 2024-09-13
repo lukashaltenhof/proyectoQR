@@ -3,7 +3,9 @@
   </ion-header>
   
   <ion-card style="background: none; text-align: center;">
-    <img alt="logo_duoc" src="assets/img/logo-duoc.png" />
+    <div #logoContainer class="logo-container">
+      <img alt="logo_duoc" src="assets/img/logo-duoc.png" (click)="animateLogo()" />
+    </div>
     <ion-card-header>
       <ion-card-title style="color: #beae19; font-size: 30px;">Docentes</ion-card-title>
     </ion-card-header>
@@ -48,8 +50,6 @@
         <ion-button expand="full" (click)="login()" class="custom-login-button">Iniciar Sesión</ion-button>
       </ion-col>
     </ion-row>
-
-    
 
     <div class="loading-container" *ngIf="loading">
       <img src="assets/img/icono_carga.png" class="loading-icon" />

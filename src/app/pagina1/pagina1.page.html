@@ -1,11 +1,11 @@
 <ion-menu contentId="main-content">
-  <ion-header >
-    <ion-toolbar >
-      <ion-title >Opciones</ion-title>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Opciones</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding menu-content" >
-    <ion-list >
+  <ion-content class="ion-padding menu-content">
+    <ion-list>
       <ion-item (click)="registrarClase()">
         <ion-label>Registrar Nueva Clase</ion-label>
       </ion-item>
@@ -17,12 +17,12 @@
       </ion-item>
       <ion-item (click)="logout()">
         <ion-label>Cerrar Sesión</ion-label>
-      </ion-item >
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
 
-<div class="ion-page" id="main-content" >
+<div class="ion-page" id="main-content">
   <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
@@ -30,21 +30,25 @@
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
-  
+
   <ion-content class="ion-padding page-content">
     <ion-row>
       <ion-col size="12" size-md="8" size-lg="6">
-        <ion-card class="custom-card">  
+        <ion-card class="custom-card">
           <ion-card-content>
-            
-            <div *ngIf="email === 'usuario1@profesor.duoc.cl'" class="user-photo-container">
+            <div
+              *ngIf="email === 'usuario1@profesor.duoc.cl'"
+              class="user-photo-container"
+            >
               <div class="user-photo-circle">
                 <ion-img src="assets/img/usuario1.png"></ion-img>
               </div>
             </div>
           </ion-card-content>
           <ion-card-header>
-            <ion-card-title class="card-title">Bienvenido(a), {{ email }}</ion-card-title>
+            <ion-card-title class="card-title">
+              Bienvenido(a), {{ email }}
+            </ion-card-title>
             <div class="clock-container">
               <h1 id="time">--:--:--</h1>
               <p id="date">--/--/----</p>
@@ -53,6 +57,5 @@
         </ion-card>
       </ion-col>
     </ion-row>
-    
   </ion-content>
 </div>
